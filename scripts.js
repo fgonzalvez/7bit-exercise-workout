@@ -24,12 +24,13 @@ function exerciseCountDown() {
 	if(globalCounter < 12) {
 		id('exercise').style.display = 'block';
 		id('rest').style.display = 'none';
+		var exerciseImg = id('exercise-img');
+		exerciseImg.src = "img/" + globalCounter + ".png";
 		var counter =  id('exercise').getElementsByClassName('counter')[0];
 		var title = id('exercise').getElementsByClassName('title')[0];
 		title.innerHTML = exercises[globalCounter - 1];
 		counter.innerHTML = 30;
 		var counterValue = counter.innerHTML;
-		console.log(counter);
 		var countDown = setInterval(function() {
 			counterValue--;
 			counter.innerHTML = counterValue;
@@ -53,7 +54,6 @@ function restCountDown() {
 	var countDown = setInterval(function() {
 		counterValue--;
 		counter.innerHTML = counterValue;
-		console.log(counter);
 		if(counterValue==0) {
 			clearInterval(countDown);
 			globalCounter++;

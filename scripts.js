@@ -1,9 +1,9 @@
-var exercises = ['Jumping jacks', 'Wall sit', 'Push-up', 'Abdominal crunch', 
-				'Step-up onto chair', 'Squat', 'Triceps dip on chair', 'Plank', 
-				'High knees running in place', 'Lunge', 'Push-up and rotation', 'Side plank'];
 var globalCounter = 1;
 var powerUpAudio = new Audio("sounds/SFX_Powerup_01.wav");
-
+var exercises = [ 'Jumping jacks', 'Wall sit', 'Push-up', 'Abdominal crunch', 
+		              'Step-up onto chair', 'Squat', 'Triceps dip on chair', 'Plank', 
+		              'High knees running in place', 'Lunge', 'Push-up and rotation', 'Side plank'];
+		
 function id(el) {
 	return document.getElementById(el);
 }

@@ -21,7 +21,7 @@ function progressBar() {
 }
 
 function exerciseCountDown() {
-	if(globalCounter < 12) {
+	if(globalCounter <= exercises.length) {
 		id('exercise').style.display = 'block';
 		id('rest').style.display = 'none';
 		var exerciseImg = id('exercise-img');

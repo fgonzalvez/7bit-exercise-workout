@@ -3,7 +3,8 @@ var powerUpAudio = new Audio("sounds/SFX_Powerup_01.wav");
 var exercises = [ 'Jumping jacks', 'Wall sit', 'Push-up', 'Abdominal crunch', 
 		              'Step-up onto chair', 'Squat', 'Triceps dip on chair', 'Plank', 
 		              'High knees running in place', 'Lunge', 'Push-up and rotation', 'Side plank'];
-		
+var barPortion = 100/exercises.length;
+
 function id(el) {
 	return document.getElementById(el);
 }
@@ -16,7 +17,7 @@ function init() {
 }
 
 function progressBar() {
-	id('progress').style.width = (globalCounter * 8.4) + "%";
+	id('progress').style.width = (globalCounter * barPortion) + "%";
 	powerUpAudio.play();
 }
 
@@ -34,7 +35,6 @@ function exerciseCountDown() {
 		var countDown = setInterval(function() {
 			counterValue--;
 			counter.innerHTML = counterValue;
-			console.log(counter);
 			if(counterValue==0) {
 				clearInterval(countDown);
 				progressBar();
@@ -50,7 +50,6 @@ function restCountDown() {
 	var counter =  id('rest').getElementsByClassName('counter')[0]
 	counter.innerHTML = 10;
 	var counterValue = counter.innerHTML;
-	console.log(counter);
 	var countDown = setInterval(function() {
 		counterValue--;
 		counter.innerHTML = counterValue;

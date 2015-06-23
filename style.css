@@ -9,8 +9,6 @@ body {
 #begin-button {
 	display: block;
 	margin: 200px auto;
-	width: 100px;
-	height: 100px;
 	cursor: pointer;
 }
 

@@ -3,10 +3,15 @@ body {
 	padding: 0;
 	font-family: 'Arial', 'sans-serif';
 	color: #333;
-  	background-color: #faffe0;
+  	background-color: #f0f0f0;
 }
 
-#begin-button {
+.navbar {
+	background-color: #555;
+	color: white;
+}
+
+#start-button {
 	display: block;
 	margin: 200px auto;
 	cursor: pointer;

@@ -1,6 +1,6 @@
 var globalCounter = 1;
 var powerUpAudio = new Audio("sounds/SFX_Powerup_01.wav");
-var exercises = [ 'Jumping jacks', 'Wall sit', 'Push-up', 'Abdominal crunch', 
+var exercises = ['Jumping jacks', 'Wall sit', 'Push-up', 'Abdominal crunch', 
 		              'Step-up onto chair', 'Squat', 'Triceps dip on chair', 'Plank', 
 		              'High knees running in place', 'Lunge', 'Push-up and rotation', 'Side plank'];
 var barPortion = 100/exercises.length;
@@ -10,7 +10,8 @@ function id(el) {
 }
 
 function init() {
-	id('begin-button').style.display = 'none';
+	id('start-button').style.display = 'none';
+	id('titles').style.display = 'none';
 	id('exercise').style.display = 'block';
 	id('bar').style.display = 'block';
 	exerciseCountDown();

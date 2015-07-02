@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>7-bit exercise workout</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<div id="wrapper">
-			<button id="begin-button" onclick="init()">Begin</button>
-			<div id="exercise">
-				<h1 class="title">Title exercise</h1>
-				<h3 class="counter">5</h3>
-			</div>
-			<div id="rest">
-				<h1 class="title">Rest</h1>
-				<h3 class="counter">5</h3>
-			</div>
-		</div>
-	</body>
-	<script src="scripts.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Scientific 7-bits Workout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#"><img src="img/logo.png"/></a>
+        </div>
+      </div>
+    </nav>
+    
+    <section id="mainframe" class="section section-center">
+      <div id="titles" class="container">
+        <h1 class="title"> Get fit with only 7 Minutes each day. </h1>
+        <h2 class="title"> Send us your NetFlow/sFlow, Network Polygraph does the rest. </h2>
+      </div>
+      <div class="container">
+        <div id="wrapper">
+          <button id="start-button" class="btn btn-primary btn-lg" onclick="init()">Start Now</button>
+          <div id="bar">
+            <div id="progress">
+            </div>
+          </div>
+          <div id="exercise" class="box">
+            <h1 class="title">Title exercise</h1>
+            <img id="exercise-img" src="img/1.png">
+            <h1 class="counter">30</h1>
+          </div>
+          <div id="rest" class="box">
+            <h1 class="title">Rest</h1>
+            <h1 class="counter">10</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
 </html>

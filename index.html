@@ -4,46 +4,44 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Scientific 7-bits Workout</title>
+    <title>The Scientific 7-bit Workout</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     
     <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
+      <div class="container container-header">
         <div class="navbar-header">
-          <a href="#"><img src="img/logo.png"/></a>
+          <a href="index.html"><img src="img/logo.png"/></a>
         </div>
       </div>
     </nav>
     
     <section id="mainframe" class="section section-center">
-      <div id="titles" class="container">
+      <div id="titles" class="container container-title">
         <h1 class="title"> Get in shape in only 7 Minutes a day. </h1>
         <h2 class="title"> Simple as 12 exercise in 7 minutes, get ready and start now! </h2>
       </div>
       <div class="container">
-        <div id="wrapper">
-          <button id="start-button" class="btn btn-primary btn-lg" onclick="init()">Start Now</button>
-          <div id="bar">
-            <div id="progress">
-            </div>
+        <button id="start-button" class="btn btn-primary btn-lg" onclick="start()">Start Now</button>
+        <div id="bar">
+          <div id="progress">
           </div>
-          <div id="exercise" class="box">
-            <h1 class="title">Title exercise</h1>
-            <img id="exercise-img" src="img/1.png">
-            <h1 class="counter">30</h1>
-          </div>
-          <div id="rest" class="box">
-            <h1 class="title">Rest</h1>
-            <h1 class="counter">10</h1>
-          </div>
+        </div>
+        <div id="exercise" class="row">
+          <h1 id="exercise-title" class="title-ex">Title exercise</h1>
+          <img id="exercise-img" src="img/1.png">
+          <h1 id="exercise-counter" class="counter">30</h1>
+        </div>
+        <div id="rest" class="row">
+          <h1 id="rest-title" class="title-ex">Rest</h1>
+          <h1 id="rest-counter" class="counter">10</h1>
         </div>
       </div>
     </section>
     
-    <script src="scripts.js"></script>
+    <script src="s.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </body>
